@@ -45,8 +45,8 @@ class Game:
         for x in range(self.columns):
             for y in range(self.rows):
                 if self.board[x][y] == self.playerTurn: # Only check current players pieces
-                    # Return a list of all adjacent pieces as the current player, and the direction relative to the 
-                    result = self.checkAdjDir(x, y) checked piece
+                    # Return a list of all adjacent pieces as the current player, and the direction relative to the checked piece
+                    result = self.checkAdjDir(x, y) 
                     if result != []: # Check if there is any adjacent pieces
                         for i in range(len(result)): # Run as many times as there are adjacent pieces
                             xdir = result[i][0]
